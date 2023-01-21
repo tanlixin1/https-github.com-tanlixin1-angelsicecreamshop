@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://img.freepik.com/free-photo/ice-cream-cones-with-copy-space_23-2148268194.jpg?w=2000");
+      min-height: 90%;
+    } 
+
+    .w3-bar .w3-button {
+      padding: 30px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-top w3-white w3-hide-small" id="myNavbar">
+    <!-- Right-sided navbar links -->
+    <div class="w3-left w3-xlarge">
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about us" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+      <a href="#order" class="w3-bar-item w3-button">ORDER</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+    
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#about us" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#menu" onclick="w3_close()" class="w3-bar-item w3-button">MENU</a>
+  <a href="#order" onclick="w3_close()" class="w3-bar-item w3-button">ORDER</a>
+</nav>
+
+<!-- Header with full-height image --> 
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white w3-xlarge w3-padding-64" style="padding:60px">
+    <span class="w3-jumbo w3-hide-small">ANGEL'S SWEET SHOP</span><br>
+    <h1>Proudly and passionately Malaysian-made </h1>
+    <p><a href="#menu" class="w3-button w3-white w3-xxlarge w3-margin-top w3-opacity w3-hover-opacity-off">ORDER TODAY</a></p>
+  </div> 
+</header>
+
+ <!-- About Us Section -->
+<div class="w3-container w3-brown w3-xlarge w3-container w3-padding-64" id="about us">
+  <div class="w3-content">
+   <h1 class="w3-center w3-text-white w3-jumbo" style="margin-bottom:60px">ABOUT US</h1>
+   <h2> Angel's Sweet Shop is an ice cream parlor founded in Kelantan since year 1988. Serving up to 30 delicacies, we strive to spread happiness through our dessert.  </h2>
+   <div class="w3-row">
+     <h1><b>Opening Hours</b></h1>
+      <div class="w3-col s6">
+        <h2>Monday: 10:00 - 21:00</h2>
+        <h2>Tuesday: CLOSED</h2>
+        <h2>Wednesday: 10:00 - 21:00</h2>
+      </div>
+      <div class="w3-col s6">
+        <h2>Thursday: CLOSED</h2>
+        <h2>Friday: 10:00 - 21:00</h2>
+        <h2>Saturday + Sunday: 10:00 - 23:00</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Section -->
+<div class="w3-main w3-content w3-white w3-text-pink w3-padding" style="max-width:1200px;margin-top:100px" id="menu">
+   <h1 class="w3-center w3-text-pink w3-jumbo" style="margin-bottom:60px">ICE CREAM FLAVOURS</h1>
+ <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/baskinrobbins/en/products/icecream/images/futbol_nut.jpg" style="width:100%">
+      <h2>Fútbol Nut</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS001</h4>
+    </div>
+
+    <div class="w3-quarter">
+     <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-Amazin-Raisin-1.jpg" style="width:100%">
+      <h2>Amazin Raisin</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS002</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-banana.jpg" style="width:100%">
+      <h2>Banana</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS003</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Baseball-Nut.jpg" style="width:100%">
+      <h2>Baseball Nut</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS004</h4> 
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-Caramel-Chocolate-Crunch.jpg" style="width:100%">
+      <h2>Caramel Chocolate Crunch</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS005</h4>
+    </div>
+
+     <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-Caramel-Praline-Cheesecake.jpg" style="width:100%">
+      <h2>Caramel Praline Cheesecake</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS006</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Choc-Chip-Cookie-Dough.jpg" style="width:100%">
+      <h2>Chocolate Chip Cookie Dough</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS007</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/CChipScoop.jpg" style="width:100%">
+      <h2>Chocolate Chip</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS008</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/NSA-Caramel-Turtle.jpg" style="width:100%">
+      <h2>Caramel Turtle (NSA)</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS009</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Chocolate.jpg" style="width:100%">
+      <h2>Chocolate</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS010</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-ChocAlmdScoop_White_2.jpg" style="width:100%">
+      <h2>Chocolate Almond</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS011</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-Chocolate-Cookie-Crackle.jpg" style="width:100%">
+      <h2>Chocolate Cookie Crackle</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS012</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Chocolate-Mousse-Royale.jpg" style="width:100%">
+      <h2>Chocolate Mousse Royale</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS013</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-Chocolate-Trilogy.jpg" style="width:100%">
+      <h2>Chocolate Trilogy</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS014</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Cookies-n-Cream.jpg" style="width:100%">
+      <h2>Cookies n Cream</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS015</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-coconut.jpg" style="width:100%">
+      <h2>Coconut</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS016</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Gold-Medal-Ribbon-TM.jpg" style="width:100%">
+      <h2>Gold Medal Ribbon</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS017</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Hokey-Pokey.jpg" style="width:100%">
+      <h2>Caramel Ribbon</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS018</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-jamoca.jpg" style="width:100%">
+      <h2>Jamoca</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS019</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Jamoca-TM-Almond-Fudge.jpg" style="width:100%">
+      <h2>Jamoca Almond Fudge</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS020</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Cotton-Candy.jpg" style="width:100%">
+      <h2>Cotton Candy</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS021</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Citrus-Twist-Ice.jpg" style="width:100%">
+      <h2>Citrus Twist Ice</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS022</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Blue-Raspberry-Sherbet.jpg" style="width:100%">
+      <h2>Blue Raspberry Sherbet</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS023</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Rainbow-Sherbet.jpg" style="width:100%">
+      <h2>Rainbow Sherbet</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS024</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/LovePotion.jpg" style="width:100%">
+      <h2>Cupid's Raspberry</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS025</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Strawberry-Cheesecake.jpg" style="width:100%">
+      <h2>Strawberry Cheesecake</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS026</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Very-Berry-Strawberry.jpg" style="width:100%">
+      <h2>Very Berry Strawberry</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS027</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Vanilla.jpg" style="width:100%">
+      <h2>Vanilla</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS028</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/Mint-Choc-Chip.jpg" style="width:100%">
+      <h2>Mint Chocolate Chip</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS029</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/NSA-Chocolate-Chip.jpg" style="width:100%">
+      <h2>NSA Chocolate Chip</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS030</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-Rocky-Road.jpg" style="width:100%">
+      <h2>Rocky Road</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS031</h4>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="https://www.baskinrobbins.com.my/content/dam/baskinrobbins/Product%20Images/Ice%20Cream%20Flavors/seasonal-Old-Fashion-Butter-Pecan.jpg" style="width:100%">
+      <h2>Butter Pecan</h2>
+      <h4>Price: RM 5.60</h4>
+      <h4>No: AIS032</h4>
+    </div>
+    </div>
+    </div>
+   </div>
+  </div>
+
+
+<!-- Order Section -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-xxlarge" id="order">
+  <div class="w3-content">
+    <p class="w3-jumbo">Place an order</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-10 w3-border w3-medium w3-large" type="text" placeholder="Order Name (AIS###)" required name="Ice cream"></p>
+      <p><input class="w3-input w3-padding-10 w3-border w3-medium w3-large" type="datetime-local" placeholder="Date and time to take" required name="date" value="2023-1-20T20:00"></p>
+      <p><input class="w3-input w3-padding-10 w3-border w3-medium w3-large" type="text" placeholder="Name on Card" required name="Message"></p>
+      <p><input class="w3-input w3-padding-10 w3-border w3-medium w3-large" type="text" placeholder="Credit card number" required name="Number"></p>
+      <p><input class="w3-input w3-padding-10 w3-border w3-medium w3-large" type="text" placeholder="Expiry date" required name="Number"></p>
+      <p><input class="w3-input w3-padding-10 w3-border w3-medium w3-large" type="text" placeholder="CVV" required name="Number"></p>
+      <p><input class="w3-input w3-padding-10 w3-border w3-medium w3-large" type="text" placeholder="Total payment" required name="Total payment"></p>
+      <p><input class="w3-input w3-padding-10 w3-border w3-medium w3-large" type="text" placeholder="Extra message"></p>
+      <p>
+      
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
